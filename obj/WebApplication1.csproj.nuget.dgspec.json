@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\save\\s6\\hackaton\\hackaton\\new-dotnet-project\\WebApplication1.csproj": {}
+    "D:\\Mobile\\new-dotnet-project\\WebApplication1.csproj": {}
   },
   "projects": {
-    "E:\\save\\s6\\hackaton\\hackaton\\new-dotnet-project\\WebApplication1.csproj": {
+    "D:\\Mobile\\new-dotnet-project\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\save\\s6\\hackaton\\hackaton\\new-dotnet-project\\WebApplication1.csproj",
+        "projectUniqueName": "D:\\Mobile\\new-dotnet-project\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "E:\\save\\s6\\hackaton\\hackaton\\new-dotnet-project\\WebApplication1.csproj",
-        "packagesPath": "C:\\Users\\ITU\\.nuget\\packages\\",
-        "outputPath": "E:\\save\\s6\\hackaton\\hackaton\\new-dotnet-project\\obj\\",
+        "projectPath": "D:\\Mobile\\new-dotnet-project\\WebApplication1.csproj",
+        "packagesPath": "C:\\Users\\prncr\\.nuget\\packages\\",
+        "outputPath": "D:\\Mobile\\new-dotnet-project\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ITU\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\prncr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -37,6 +34,9 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "default"
         }
       },
       "frameworks": {
@@ -95,6 +95,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -103,7 +121,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
