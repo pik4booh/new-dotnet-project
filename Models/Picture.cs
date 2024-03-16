@@ -17,5 +17,6 @@ namespace WebApplication1.Models
 
 		public virtual ICollection<Like> likes { get; set; }
 		public virtual ICollection<Comments> comments { get; set; }
+		
 	}
 }
