@@ -37,16 +37,31 @@ namespace WebApplication1.Controllers
 		[HttpPost("upload")]
 		public IActionResult uploadPicture([FromBody] PictureDTO picture)
 		{
-			try
-			{
-				_context.Picture.Add(picture.toPicture());
-				_context.SaveChanges();
-				return Ok(picture);
-			}
-			catch (Exception e)
-			{
-				return BadRequest(e);
-			}
+            try
+            {
+                var base64String = picture.image;
+                var imageBytes = Convert.FromBase64String(base64String);
+                var imagePath = Path.Combine("Images", Guid.NewGuid().ToString() + ".jpg");
+                System.IO.File.WriteAllBytes(imagePath, imageBytes);
+
+                // Here you can also save the title and description to a database or file
+                // For simplicity, we're just logging them
+
+				Picture pic = picture.toPicture();
+				pic.picturePath = imagePath;
+                _context.Picture.Add(pic);
+                _context.SaveChanges();
+                return Ok(picture);
+                Console.WriteLine($"Title: {picture.title}, Description: {picture.description}");
+
+                return Ok(new { message = "Image uploaded successfully." });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = "Error uploading image: " + ex.Message });
+            }
+
+			
 		}
 
 		[HttpPost("picture")]

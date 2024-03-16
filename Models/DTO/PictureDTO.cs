@@ -3,6 +3,7 @@
 	public class PictureDTO
 	{
 		public string title { get; set; }
+		public string image {  get; set; }
 		public string picturePath { get; set; }
 		public int idUser { get; set; }
 		public string description { get; set; }
