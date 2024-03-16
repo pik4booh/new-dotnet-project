@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4Zm+0dW9LgAKqwbDTf+MNPRN9e/q3yX94pR0+JpkJ00fE+jUyX0up6lPrIfMFQw+D/q6PXf39jsfC7fFmWmaiQ==",
+  "dgSpecHash": "V6HgR2it6D6aRER6L+RoGPeS8VzDd6SZmdMFuJXLXjN0P+wcQslJaHMVHFIh5ZnMUlEi212oc6WLaytaSCqiKg==",
   "success": true,
   "projectFilePath": "D:\\Mobile\\new-dotnet-project\\WebApplication1.csproj",
   "expectedPackageFiles": [
@@ -183,8 +183,8 @@
     "C:\\Users\\prncr\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
     "C:\\Users\\prncr\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\prncr\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\prncr\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
     "C:\\Users\\prncr\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\prncr\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
     "C:\\Users\\prncr\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
     "C:\\Users\\prncr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.26\\microsoft.netcore.app.host.win-x64.6.0.26.nupkg.sha512"
   ],
