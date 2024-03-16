@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1mnJjvUKrTY0dLQTZP47EeysfSNKIHKNyFVs371SBkb7x3CoWOUw32y6rIFgnCmqAVpmXaHPJriQhJRTFbRgzA==",
+  "dgSpecHash": "V6HgR2it6D6aRER6L+RoGPeS8VzDd6SZmdMFuJXLXjN0P+wcQslJaHMVHFIh5ZnMUlEi212oc6WLaytaSCqiKg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\prncr\\source\\repos\\template-web-api\\WebApplication1.csproj",
+  "projectFilePath": "D:\\Mobile\\new-dotnet-project\\WebApplication1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\prncr\\.nuget\\packages\\castle.core\\5.1.0\\castle.core.5.1.0.nupkg.sha512",
     "C:\\Users\\prncr\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -183,8 +183,8 @@
     "C:\\Users\\prncr\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
     "C:\\Users\\prncr\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\prncr\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\prncr\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
     "C:\\Users\\prncr\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\prncr\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
     "C:\\Users\\prncr\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
     "C:\\Users\\prncr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.26\\microsoft.netcore.app.host.win-x64.6.0.26.nupkg.sha512"
   ],

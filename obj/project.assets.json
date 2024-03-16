@@ -10508,11 +10508,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\prncr\\source\\repos\\template-web-api\\WebApplication1.csproj",
+      "projectUniqueName": "D:\\Mobile\\new-dotnet-project\\WebApplication1.csproj",
       "projectName": "WebApplication1",
-      "projectPath": "C:\\Users\\prncr\\source\\repos\\template-web-api\\WebApplication1.csproj",
+      "projectPath": "D:\\Mobile\\new-dotnet-project\\WebApplication1.csproj",
       "packagesPath": "C:\\Users\\prncr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\prncr\\source\\repos\\template-web-api\\obj\\",
+      "outputPath": "D:\\Mobile\\new-dotnet-project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\prncr\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10535,9 +10535,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "default"
       }
     },
     "frameworks": {
