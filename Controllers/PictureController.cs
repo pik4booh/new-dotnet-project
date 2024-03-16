@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebApplication1.Data;
 using WebApplication1.Models;
+using WebApplication1.Models.DTO;
 
 namespace WebApplication1.Controllers
 {
@@ -27,6 +28,22 @@ namespace WebApplication1.Controllers
 			{
 				return BadRequest(e);
 			}
-		}	
+		}
+		[HttpPost("upload")]
+		public IActionResult uploadPicture([FromBody] PictureDTO picture)
+		{
+			try
+			{
+				_context.Picture.Add(picture.toPicture());
+				_context.SaveChanges();
+				return Ok(picture);
+			}
+			catch (Exception e)
+			{
+				return BadRequest(e);
+			}
+		}
+
+		
 	}
 }
