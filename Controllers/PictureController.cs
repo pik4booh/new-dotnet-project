@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 using System.Net.Http.Headers;
 using System.Text;
 using WebApplication1.Data;
@@ -52,9 +53,6 @@ namespace WebApplication1.Controllers
                 _context.Picture.Add(pic);
                 _context.SaveChanges();
                 return Ok(picture);
-                Console.WriteLine($"Title: {picture.title}, Description: {picture.description}");
-
-                return Ok(new { message = "Image uploaded successfully." });
             }
             catch (Exception ex)
             {
@@ -83,31 +81,19 @@ namespace WebApplication1.Controllers
 			}
 		}
 
-		[HttpGet("description-auto")]
-		public async Task<string> generateDescription()
+		[HttpPost("description-auto")]
+		public async Task<string> generateDescription([FromBody] PictureDTO pictureDTO)
 		{
-			string imagePath = "C:/Untitled.png";
 
-			// Initialize a MemoryStream to hold the image data
-			using (MemoryStream memoryStream = new MemoryStream())
-			{
-				// Open the image file
-				using (FileStream fileStream = new FileStream(imagePath, FileMode.Open, FileAccess.Read))
-				{
-					// Copy the file stream to the memory stream
-					fileStream.CopyTo(memoryStream);
-				}
 
-				// Convert the memory stream to a byte array
-				byte[] imageBytes = memoryStream.ToArray();
+			
+            // Convert the byte array to a Base64 string
+            var base64Image = pictureDTO.image;
 
-				// Convert the byte array to a Base64 string
-				string base64Image = Convert.ToBase64String(imageBytes);
-				using (var client = new HttpClient())
+                using (var client = new HttpClient())
 				{
 					client.DefaultRequestHeaders.Accept.Clear();
 					client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-					Console.WriteLine(base64Image);
 					var requestBody = new
 					{
 						contents = new[]
@@ -143,7 +129,7 @@ namespace WebApplication1.Controllers
 						throw new Exception($"Error: {response.StatusCode}");
 					}
 				}
-			}
+			
 
 
 		}
