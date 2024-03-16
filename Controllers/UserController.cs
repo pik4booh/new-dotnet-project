@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebApplication1.Data;
 using WebApplication1.Models;
+using WebApplication1.Models.DTO;
 
 namespace WebApplication1.Controllers
 {
@@ -17,34 +18,29 @@ namespace WebApplication1.Controllers
 		}
 
 		[HttpPost("signin")]
-		public IActionResult SignIn([FromBody] User user)
+		public IActionResult SignIn([FromBody] UserDTO userdto)
 		{
-			User users = _context.Users.FirstOrDefault(u => u.email == user.email && u.pwd == user.pwd);
+			User users = _context.Users.FirstOrDefault(u => u.email == userdto.email && u.pwd == userdto.pwd);
 			if (users == null)
 			{
 				return Unauthorized("Invalid credentials");
 			}
+		
 			return Ok(users);
 		}
 
 		[HttpPost("signup")]
-		public IActionResult SignUp(string email, string password, string bio, string pseudo)
+		public IActionResult SignUp([FromBody] UserRegisterDto userToRegister)
 		{
 			try
 			{
-				var user = _context.Users.FirstOrDefault(u => u.email == email);
+				var user = _context.Users.FirstOrDefault(u => u.email == userToRegister.email);
 				if (user != null)
 				{
 					return BadRequest("User already exists");
 				}
-				user = new User
-				{
-					email = email,
-					pseudo = pseudo,
-					bio = bio,
-					pdpPath = "none",
-					pwd = password
-				};
+				user = userToRegister.toUser();
+				
 				_context.Users.Add(user);
 				_context.SaveChanges();
 				return Ok(user);
