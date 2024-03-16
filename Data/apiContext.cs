@@ -20,7 +20,7 @@ public partial class apiContext : DbContext
     {
 		if (!optionsBuilder.IsConfigured)
 		{
-            optionsBuilder.UseNpgsql("Host=localhost;Database=Gallery;Username=postgres;Password=postgres;");
+            optionsBuilder.UseNpgsql("Host=localhost;Database=Gallery;Username=postgres;Password=root;");
             optionsBuilder.UseLazyLoadingProxies();
 		}
 
