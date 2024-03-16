@@ -42,7 +42,7 @@ namespace WebApplication1.Controllers
 				user = userToRegister.toUser();
 				
 				_context.Users.Add(user);
-				_context.Users.SaveChanges();
+				_context.SaveChanges();
 				return Ok(user);
 
 			}

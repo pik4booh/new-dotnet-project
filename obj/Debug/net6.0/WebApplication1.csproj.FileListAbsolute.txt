@@ -549,3 +549,13 @@ D:\Mobile\new-dotnet-project\obj\Debug\net6.0\refint\WebApplication1.dll
 D:\Mobile\new-dotnet-project\obj\Debug\net6.0\WebApplication1.pdb
 D:\Mobile\new-dotnet-project\obj\Debug\net6.0\WebApplication1.genruntimeconfig.cache
 D:\Mobile\new-dotnet-project\obj\Debug\net6.0\ref\WebApplication1.dll
+D:\Dev\L3\S5\Hackathon\new-dotnet-project\obj\Debug\net6.0\WebApplication1.csproj.AssemblyReference.cache
+D:\Dev\L3\S5\Hackathon\new-dotnet-project\obj\Debug\net6.0\WebApplication1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\L3\S5\Hackathon\new-dotnet-project\obj\Debug\net6.0\WebApplication1.AssemblyInfoInputs.cache
+D:\Dev\L3\S5\Hackathon\new-dotnet-project\obj\Debug\net6.0\WebApplication1.AssemblyInfo.cs
+D:\Dev\L3\S5\Hackathon\new-dotnet-project\obj\Debug\net6.0\WebApplication1.csproj.CoreCompileInputs.cache
+D:\Dev\L3\S5\Hackathon\new-dotnet-project\obj\Debug\net6.0\WebApplication1.MvcApplicationPartsAssemblyInfo.cs
+D:\Dev\L3\S5\Hackathon\new-dotnet-project\obj\Debug\net6.0\WebApplication1.MvcApplicationPartsAssemblyInfo.cache
+D:\Dev\L3\S5\Hackathon\new-dotnet-project\obj\Debug\net6.0\WebApplication1.dll
+D:\Dev\L3\S5\Hackathon\new-dotnet-project\obj\Debug\net6.0\refint\WebApplication1.dll
+D:\Dev\L3\S5\Hackathon\new-dotnet-project\obj\Debug\net6.0\WebApplication1.pdb
