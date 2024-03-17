@@ -10,6 +10,7 @@ namespace WebApplication1.Models
 		public int idPicture { get; set; }
 		public string comment { get; set; }
 
+
 		public virtual Picture picture { get; set; }
 		public virtual User User { get; set; }
 	}

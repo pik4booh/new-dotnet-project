@@ -18,22 +18,25 @@ public partial class apiContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-		if (!optionsBuilder.IsConfigured)
-		{
-            optionsBuilder.UseNpgsql("Host=localhost;Database=Gallery;Username=postgres;Password=root;");
-            optionsBuilder.UseLazyLoadingProxies();
-		}
+	
+        optionsBuilder.UseNpgsql("Host=localhost;Database=Gallery;Username=postgres;Password=root;");
+        optionsBuilder.UseLazyLoadingProxies();
+    
 
 	}
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         OnModelCreatingPartial(modelBuilder);
-
+        modelBuilder.Entity<User>()
+            .HasMany(u => u.pictures)
+            .WithOne(p => p.user)
+            .HasForeignKey(p => p.idUser);  
+/*
         modelBuilder.Entity<Picture>()
             .HasOne(p => p.user)
             .WithMany(u => u.pictures)
-            .HasForeignKey(p => p.idUser);
+            .HasForeignKey(p => p.idUser);*/
 
         modelBuilder.Entity<CategoryPicture>()
             .HasOne(cp => cp.picture)

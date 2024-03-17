@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using WebApplication1.Data;
 using WebApplication1.Models;
 using WebApplication1.Models.DTO;
@@ -18,7 +19,7 @@ namespace WebApplication1.Controllers
 		}
 
 		[HttpPost("signin")]
-		public IActionResult SignIn([FromBody] UserDTO userdto)
+		public IActionResult SignIn([FromBody] UserSignInDTO userdto)
 		{
 			User users = _context.Users.FirstOrDefault(u => u.email == userdto.email && u.pwd == userdto.pwd);
 			if (users == null)
@@ -26,7 +27,16 @@ namespace WebApplication1.Controllers
 				return Unauthorized("Invalid credentials");
 			}
 		
-			return Ok(users);
+			string id = users.idUser.ToString();
+            UserDTO userDTO = new UserDTO
+            {
+                idUser = id,
+                pseudo = users.pseudo,
+                email = users.email,
+                bio = users.bio,
+                pdpPath = users.pdpPath
+            };
+            return Ok(new object [] { userDTO, "Status : Success" });
 		}
 
 		[HttpPost("signup")]
